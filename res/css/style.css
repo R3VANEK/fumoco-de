@@ -81,6 +81,7 @@ body{
     transition-property: opacity;
     opacity: 0;
     transition: 0.6s ease-in-out;
+    z-index:9999;
 }
 #scroll-helper span{
     font-size:4rem;
@@ -437,4 +438,21 @@ box-shadow: 0px 0px 20px -10px rgba(66, 68, 90, 1);
 }
 .contact-box div p{
     margin-left:10px;
+}
+
+@media only screen and (max-width: 768px){
+    #contact-description{
+        font-size:2rem;
+    }
+    #contact-section .row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-box{
+        width:80%;
+        margin-top:30px;
+    }
+    .contact-box div:nth-of-type(1){
+        margin-top:30px;
+    }
 }
