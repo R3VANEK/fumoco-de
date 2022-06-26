@@ -1,1 +1,10 @@
-https://roma.domesticworkers.org/
+design:
+- https://roma.domesticworkers.org/
+-https://cleverbirds.com/
+
+
+treść:
+- może jakiś cytat z fotografią?
+- jakie firmy/kraje nam zaufały
+- zamiast slide banera na początku może w tle puścić filmik, a iesy dać gdzieś indziej?
+- czy jest facebook/twitter do fumoco.de?
