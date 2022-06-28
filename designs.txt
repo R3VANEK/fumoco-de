@@ -8,3 +8,5 @@ treść:
 - jakie firmy/kraje nam zaufały
 - zamiast slide banera na początku może w tle puścić filmik, a iesy dać gdzieś indziej?
 - czy jest facebook/twitter do fumoco.de?
+
+- SCROLL SNAP
