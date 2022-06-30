@@ -45,7 +45,8 @@ h1,h2,h3,h4,h5,h6{
 }
 
 body, html {
-    
+    margin: 0;
+    padding: 0;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     position: relative;
@@ -54,6 +55,7 @@ body, html {
 
   #fullpage-wrapper{
     height: 100vh;
+    width: 100vw;
     position: relative;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
@@ -585,8 +587,61 @@ iesy section
 */
 #iesy-section{
     background-color: var(--grey-fumoco);
-    color:var(--white-fumoco)
+    color:var(--white-fumoco);
+    background-image: url("../img/baner/IESY\ BASE_v3\ BLUE.jpg");
+    background-position: center;
+    background-repeat: none;
+    background-size: contain;
+    position: relative;
+    width: 100vw;
+    
+    
 }
+.iesy-benefits{
+  
+    position: absolute;
+    width:33.3%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.293);
+    transition: 0.5s ease-in;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.iesy-benefits *{
+    opacity: 1;
+    font-size:3rem;
+}
+.iesy-benefits > p{
+    font-size:"NexaDemo-Bold";
+    padding:10px;
+    text-align: center;
+}
+.iesy-benefits span{
+    color:var(--green-fumoco);
+    fill:var(--green-fumoco);
+    font-size: 5rem;
+}
+.iesy-benefits:nth-of-type(2){
+    margin-left:33.3%;
+    background-color: rgba(0, 0, 0, 0.464);
+}
+.iesy-benefits:nth-of-type(3){
+    margin-left:66.6%;
+}
+.iesy-benefits:nth-of-type(3) >p{
+    padding:30px;
+    
+}
+.iesy-benefits:hover{
+    background-color:#70d55187 !important;
+}
+
+
+
+
 .iesy-article{
     margin-left:5%;
     width:80%;
