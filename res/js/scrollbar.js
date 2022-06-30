@@ -1,4 +1,3 @@
-let progress = document.getElementById('progressbar')
 // let tHeight = document.body.scrollHeight - window.innerHeight
 let tHeight = 0;
 
@@ -16,10 +15,5 @@ window.onscroll = function(){
 
     console.log(finalHeight)
 
-    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-        $("#guzik1").fadeIn(500)
-    }  
-    else if (document.body.scrollTop < 100 || document.documentElement.scrollTop < 100) {
-        $("#guzik1").fadeOut(500)
-    }
+  
 }
