@@ -97,7 +97,7 @@ body, html {
     width: 100%;
     height: 100%;
     position: relative;
-
+    opacity: 0;
     cursor: pointer;
     text-decoration: none;
   }
@@ -212,31 +212,47 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
-#scroll-banner-down a {
+#scroll-banner-down > span{
     text-decoration: none;
     font-size:1.3rem;
     width:10px;
     heighT:10px;
     font-family:Arial, Helvetica, sans-serif;
-    border-top:3px solid white;
-    border-right:3px solid white;
+    border-top:2px solid white;
+    border-right:2px solid white;
     transform: rotate(135deg);
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#scroll-banner-down a::before{
+#scroll-banner-down > span::before{
     content:'';
     position: absolute;
-    top:30%;
-    left:-50%;
+    top:50%;
+    right:50%;
     width: 100%;
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    border-top:3px solid white;
-    border-right:3px solid white;
-    
-
+    border-top:2px solid white;
+    border-right:2px solid white;
 }
+
+#scroll-banner-down:hover span{
+    animation-name: slide-down;
+    animation-duration: 1s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes slide-down{
+    from{margin-top:0%;}
+    to{margin-top:300%}
+}
+
 /* #scroll-banner-down a:hover{
     transform: translateY(10px);
     transform: rotate(135deg); 
