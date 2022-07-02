@@ -215,9 +215,11 @@ body, html {
     overflow: hidden;
 }
 #videoBanner{
-    width:100%;
-    max-height:100%;
-    object-fit: fill;
+    width: 100%;
+  height: auto;
+  max-height: 100vh;
+  object-fit: cover;
+  position: absolute; /* magic sauce */
 }
 #scroll-banner-down > span{
     text-decoration: none;
@@ -615,8 +617,8 @@ about us section
 }
 #about-us-description-box p{
     text-align: left;
-    font-size:1.2rem;
     margin-top:40px;
+   
 }
 #about-us-description-box p:first-of-type{
     margin-top:5%;
@@ -669,7 +671,7 @@ iesy section
 }
 .iesy-benefits *{
     opacity: 1;
-    font-size:3rem;
+    font-size:3vw;
 }
 .iesy-benefits > p{
     font-size:"NexaDemo-Bold";
@@ -744,15 +746,44 @@ contact section
     color:var(--white-fumoco);
     text-align: center;
     font-size:1.6vw;
+    position: relative;
+    overflow: hidden;
 }
+
+#contact-section .contact-hero-image{
+    background-image: url("../img/other/contact2.webp");
+    width:100%;
+    height:60%;
+    background-position: 0% 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    z-index:1;
+    position: absolute;
+}
+#contact-heading{
+    z-index:999;
+    opacity:1;
+    margin-left:20%;
+    height:40%;
+}
+#contact-heading > p{
+    text-align: left;
+}
+
+
 #contact-description{
     margin-top:2%;
     width:50%;
 }
+
 .contact-box{
     background-color: var(--grey-fumoco);
-    height:30vh;
+    height:max-content;
+    max-height:50vh;
+    margin-top:2%;
     padding:20px;
+    width: 35vw;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -761,14 +792,42 @@ contact section
     transform:translateY(0%);
     position: relative;
     z-index:99;
+    transition:0.7 linear;
+    z-index:2;
+}
+.contact-box::before{
+    content:'';
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    background-color: var(--green-fumoco);
+    top:0;
+    left:70%;
+    z-index:-1;
+}
+.contact-box span{
+    color:var(--green-fumoco);
+    font-size:2rem;
 }
 
+
 .contact-box > h3{
-    border-bottom:3px solid var(--white-fumoco);
+    position: relative;
 }
-.contact-box:hover{
-    transform:translateY(-10%);
+.contact-box > h3::before{
+    content:"";
+    position: absolute;
+    width: 0%;
+    height:3px;
+    background-color: var(--green-fumoco);
+    top:100%;
+    left:0;
+    transition: 0.5s ease-out;
 }
+.contact-box:hover h3::before{
+    width: 80%;
+}
+
 .contact-box div{
     margin-top:5%;
     display: flex;

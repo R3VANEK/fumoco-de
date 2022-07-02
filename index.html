@@ -10,10 +10,8 @@
     <meta name="author" content="Jan Napieralski https://github.com/R3VANEK"/>
     <meta name="copyright" content="Jan Napieralski"/>
     
-    <link rel="stylesheet" href="./res/css/aos.css" type="text/css">
-    <link rel="stylesheet" type="text/css" href="./res/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
+    <link rel="stylesheet" type="text/css" href="./res/css/style.css">
     <title>Fumoco.de</title>
 </head>
 <body>
@@ -71,14 +69,14 @@
         <section id="about-us-section">
             <div class="row" style="height:100%">
                 <article id="about-us-description-box">
-                    <h1  class="aniview-v3" data-av-animation="slideInRight" class="section-main-h1">About us</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis numquam accusantium doloremque blanditiis temporibus beatae tempora dicta velit! Neque natus mollitia libero quasi eos pariatur iure sunt voluptas quas eaque.
+                    <h1 data-scroll-animation="fadeIn" data-scroll-timing=2000 class="section-main-h1">About us</h1>
+                    <p data-scroll-animation="slideLeft" data-scroll-timing=1000>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis numquam accusantium doloremque blanditiis temporibus beatae tempora dicta velit! Neque natus mollitia libero quasi eos pariatur iure sunt voluptas quas eaque.
                     </p>
     
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis numquam accusantium doloremque blanditiis temporibus beatae tempora dicta velit! Neque natus mollitia libero quasi eos pariatur iure sunt voluptas quas eaque.
+                    <p data-scroll-animation="slideLeft" data-scroll-timing=1200>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis numquam accusantium doloremque blanditiis temporibus beatae tempora dicta velit! Neque natus mollitia libero quasi eos pariatur iure sunt voluptas quas eaque.
                     </p>
     
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis numquam accusantium doloremque blanditiis temporibus beatae tempora dicta velit! Neque natus mollitia libero quasi eos pariatur iure sunt voluptas quas eaque.
+                    <p data-scroll-animation="slideLeft" data-scroll-timing=1400>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis numquam accusantium doloremque blanditiis temporibus beatae tempora dicta velit! Neque natus mollitia libero quasi eos pariatur iure sunt voluptas quas eaque.
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia neque, dignissimos sint quidem iusto molestias temporibus aliquam omnis atque odio illo eligendi est corrupti laudantium minus magni delectus, possimus ducimus.
                     </p>
     
@@ -145,12 +143,16 @@
         </section> -->
     
     
-        <section id="contact-section" style="align-items: center;">
-            <h1 class="section-main-h1">Neugierig?</h1>
-            <p id="contact-description">Rufen sie uns an oder mailen uns an. Wir geben Ihnen gerne nähere Informationen</p>
-    
-    
-            <div class="row" style="margin-top: 15vh; justify-content:space-evenly;">
+        <section id="contact-section">
+
+            <aside class="contact-hero-image"></aside>
+
+            <div id="contact-heading">
+                <h1 class="section-main-h1" data-scroll-animation="fadeIn" data-scroll-timing=2000>Neugierig?</h1>
+                <p id="contact-description" data-scroll-animation="slideLeft" data-scroll-timing=2000>Rufen sie uns an oder mailen uns an. Wir geben Ihnen gerne nähere Informationen</p>
+            </div>
+        
+            <div class="row" style="justify-content:space-evenly">
                 <article class="contact-box">
                     <h3>Fumoco GmbH</h3>
                     <div>
@@ -179,7 +181,45 @@
                         <p>+49 123 456 789</p>
                     </div>
                 </article>
+
             </div>
+ 
+            <!-- <h1 class="section-main-h1">Neugierig?</h1>
+            <p id="contact-description">Rufen sie uns an oder mailen uns an. Wir geben Ihnen gerne nähere Informationen</p> -->
+    
+    
+
+
+            
+                <!-- <article class="contact-box">
+                    <h3>Fumoco GmbH</h3>
+                    <div>
+                        <span class="material-symbols-outlined">mail</span>
+                        <p>info@fumoco.de</p>
+                    </div>
+                    
+                    <div>
+                        <span class="material-symbols-outlined">call</span>
+                        <p>+49 176 565 38 763</p>
+                    </div>
+                    
+                </article>
+        
+        
+                <article class="contact-box">
+    
+                    <h3>Christoph Kaczynski</h3>
+                    <div>
+                        <span class="material-symbols-outlined">mail</span>
+                        <p>johndoe@wp.pl</p>
+                    </div>
+                    
+                    <div>
+                        <span class="material-symbols-outlined">call</span>
+                        <p>+49 123 456 789</p>
+                    </div>
+                </article> -->
+           
             
         </section>
      
