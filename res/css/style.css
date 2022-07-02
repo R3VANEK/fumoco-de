@@ -214,6 +214,11 @@ body, html {
     align-items: center;
     overflow: hidden;
 }
+#videoBanner{
+    width:100%;
+    max-height:100%;
+    object-fit: fill;
+}
 #scroll-banner-down > span{
     text-decoration: none;
     font-size:1.3rem;
