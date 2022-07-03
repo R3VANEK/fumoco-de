@@ -215,12 +215,18 @@ body, html {
     overflow: hidden;
 }
 #videoBanner{
-    width: 100%;
+object-fit: cover;
+  z-index:-1;
+  top:50%;
+  left:50%;
   height: auto;
-  max-height: 100vh;
-  object-fit: cover;
+  width: auto;
+  min-height: 100vh;
+  min-width: 100vw;
+  transform: translate(-50%, -50%);
   position: absolute; /* magic sauce */
 }
+
 #scroll-banner-down > span{
     text-decoration: none;
     font-size:1.3rem;
@@ -732,7 +738,7 @@ iesy section
     background-size: contain;
     position: absolute;
     bottom:-20px;
-    right:0px;
+    right:-40px;
     transform: rotate(180deg);
 }
 .iesy-benefits-box{
@@ -1070,13 +1076,7 @@ body, html {
     align-items: center;
     overflow: hidden;
 }
-#videoBanner{
-    width: 100%;
-  height: auto;
-  max-height: 100vh;
-  object-fit: cover;
-  position: absolute; /* magic sauce */
-}
+
 #scroll-banner-down > span{
     text-decoration: none;
     font-size:1.3rem;
@@ -1583,19 +1583,7 @@ iesy section
     text-align: center;
     color:rgb(200, 200, 200);
 }
-.iesy-article::after{
-    content:'';
-    background-image: url("../img/other/quote.png");
-    width:50px;
-    height:50px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    bottom:-20px;
-    right:0px;
-    transform: rotate(180deg);
-}
+
 .iesy-benefits-box{
     font-weight: bold;
     font-family: "NexaDemo-Bold";

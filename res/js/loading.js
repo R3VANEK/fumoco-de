@@ -17,7 +17,11 @@ window.addEventListener("load",()=>{
         autoplay: true,
         easing: 'easeInOutSine',
         duration: 1000,
-        delay: 5500
+        delay: 5500,
+        complete: function(){
+            var video = document.getElementById("videoBanner");
+            video.play();
+        }
     })
 
 

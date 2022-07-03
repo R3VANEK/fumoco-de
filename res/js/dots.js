@@ -13,7 +13,10 @@ document.addEventListener("DOMContentLoaded", function(){
         $(e).css("opacity", "0")
 
     })
-    $("[data-scroll-animation^=slide]").each((i,e)=>{
+    $("[data-scroll-animation=slideRight]").each((i,e)=>{
+        $(e).css("transform", "translateX(50%)")
+    })
+    $("[data-scroll-animation=slideLeft]").each((i,e)=>{
         $(e).css("transform", "translateX(-50%)")
     })
     
