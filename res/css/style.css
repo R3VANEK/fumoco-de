@@ -627,7 +627,7 @@ about us section
     padding:50px;
 }
 #about-us-description-box p{
-    text-align: left;
+    text-align:start;
     margin-top:80px;
     font-size:2rem;
    
@@ -644,6 +644,10 @@ about us section
     background-size: cover;
     background-attachment: fixed;
     max-height:100vh;
+}
+#about-us-description-box span{
+    font-weight: bold;
+    color: var(--green-fumoco);
 }
 
 
