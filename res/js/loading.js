@@ -1,6 +1,9 @@
+var isFinishedLoading = false;
+
 window.addEventListener("load",()=>{
 
-    
+    let banner = document.getElementById("banner-main");
+    banner.scrollIntoView();
 
     var loadingSiteFold = anime({
         targets: "#animation-holder",
@@ -21,8 +24,11 @@ window.addEventListener("load",()=>{
         complete: function(){
             var video = document.getElementById("videoBanner");
             video.play();
+            isFinishedLoading = true;
         }
     })
+
+    
 
 
 })

@@ -53,6 +53,9 @@ const scrollAnimations = (parent, index) =>{
     if(animationCheck[index])
         return
 
+    if(!isFinishedLoading)
+        return;
+
     let elementsToAnimate = parent.find("[data-scroll-animation]");
 
 

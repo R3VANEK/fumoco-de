@@ -6,12 +6,17 @@
     font-family: "NexaDemo-Light";
     src: url("../font/NexaDemo-Light.ttf");
 }
+@font-face{
+    font-family: "Roboto";
+    src: url("../font/Roboto/Roboto-Light.ttf");
+}
 
 
 *{
     margin:0;
     padding:0;
-    font-family: 'NexaDemo-Light', Arial;
+    /* font-family: 'NexaDemo-Light', Arial; */
+    font-family:'Roboto',Arial;
     scroll-behavior: smooth;
     --black-fumoco: #1B232A;
     --grey-fumoco: #36424A;
@@ -20,7 +25,7 @@
 
 }
 h1,h2,h3,h4,h5,h6{
-    font-family: 'NexaDemo-Bold', Arial;
+    font-family: 'Roboto', Arial;
 }
 .row{
     width:100%;
@@ -619,20 +624,21 @@ about us section
 */
 #about-us-description-box{
     width:40%;
-    padding:30px;
+    padding:50px;
 }
 #about-us-description-box p{
     text-align: left;
-    margin-top:40px;
+    margin-top:80px;
+    font-size:2rem;
    
 }
 #about-us-description-box p:first-of-type{
-    margin-top:5%;
+    margin-top:10%;
 }
 
 #about-us-image-box{
     width:60%;
-    background-image: url("../img/other/test1.avif");
+    background-image: url("../img/other/amublance.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -860,43 +866,10 @@ contact section
 .contact-box:hover h3::before{
     width: 80%;
 }
-@font-face {
-    font-family: "NexaDemo-Bold";
-    src: url("../font/NexaDemo-Bold.ttf");
-}
-@font-face{
-    font-family: "NexaDemo-Light";
-    src: url("../font/NexaDemo-Light.ttf");
-}
 
 
-*{
-    margin:0;
-    padding:0;
-    font-family: 'NexaDemo-Light', Arial;
-    scroll-behavior: smooth;
-    --black-fumoco: #1B232A;
-    --grey-fumoco: #36424A;
-    --white-fumoco: #DFE5E6;
-    --green-fumoco: #70D551;
 
-}
-h1,h2,h3,h4,h5,h6{
-    font-family: 'NexaDemo-Bold', Arial;
-}
-.row{
-    width:100%;
-    display: flex;
-    justify-content: center;
-}
 
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
-}
 .section-main-h1{
     padding-top:30px;
     font-size:4rem;
@@ -1456,41 +1429,6 @@ box-shadow: 0px 6px 18px -10px rgba(66, 68, 90, 1);
 .banner-img-holder:nth-of-type(1){
     background-image: url("../img/baner/IESY\ STRETCHER_v3\ BLUE.jpg");
 }
-
-footer{
-    background-color: var(--green-fumoco);
-    width:100vw;
-    height:20vh;
-}
-/*
-==================================================================================
-about us section
-==================================================================================
-*/
-#about-us-description-box{
-    width:40%;
-    padding:30px;
-}
-#about-us-description-box p{
-    text-align: left;
-    margin-top:40px;
-   
-}
-#about-us-description-box p:first-of-type{
-    margin-top:5%;
-}
-
-#about-us-image-box{
-    width:60%;
-    background-image: url("../img/other/test1.avif");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-    background-attachment: fixed;
-    max-height:100vh;
-}
-
-
 
 
 
