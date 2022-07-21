@@ -1,4 +1,4 @@
-const sections = $("section");
+const sections = $("body section[id]");
 const windowHeight = window.innerHeight;
 
 
