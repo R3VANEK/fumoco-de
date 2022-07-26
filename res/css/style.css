@@ -1657,22 +1657,7 @@ box-shadow: 0px 0px 20px -10px rgba(66, 68, 90, 1);
     margin-left:10px;
 }
 
-@media only screen and (max-width: 768px){
-    #contact-description{
-        font-size:1.2rem;
-    }
-    #contact-section .row{
-        flex-direction: column;
-        align-items: center;
-    }
-    .contact-box{
-        width:80%;
-        margin-top:30px;
-    }
-    .contact-box div:nth-of-type(1){
-        margin-top:30px;
-    }
-}
+
 
 
 
