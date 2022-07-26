@@ -818,24 +818,7 @@ contact section
     width:50%;
 }
 
-.contact-box{
-    background-color: var(--grey-fumoco);
-    height:max-content;
-    max-height:50vh;
-    margin-top:2%;
-    padding:20px;
-    width: 35vw;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    transition-property: transform;
-    transition: 0.3s ease-in-out;
-    transform:translateY(0%);
-    position: relative;
-    z-index:99;
-    transition:0.7 linear;
-    z-index:2;
-}
+
 .contact-box::before{
     content:'';
     position: absolute;
@@ -853,6 +836,7 @@ contact section
 
 
 .contact-box > h3{
+    font-size:1.6rem;
     position: relative;
 }
 .contact-box > h3::before{
@@ -1585,7 +1569,7 @@ contact section
 .contact-box{
     background-color: var(--grey-fumoco);
     height:max-content;
-    height:20vh;
+    height:25vh;
     margin-top:2%;
     padding:20px;
     width: 35vw;
@@ -1634,14 +1618,15 @@ contact section
 }
 
 .contact-box div{
+    font-size:1.5rem;
     margin-top:5%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items:center;
     -webkit-box-shadow: 0px 0px 20px -10px rgba(66, 68, 90, 1);
--moz-box-shadow: 0px 0px 20px -10px rgba(66, 68, 90, 1);
-box-shadow: 0px 0px 20px -10px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 20px -10px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 20px -10px rgba(66, 68, 90, 1);
 }
 .contact-box div:nth-of-type(1){
     margin-top:10%;
@@ -1650,22 +1635,6 @@ box-shadow: 0px 0px 20px -10px rgba(66, 68, 90, 1);
     margin-left:10px;
 }
 
-@media only screen and (max-width: 768px){
-    #contact-description{
-        font-size:2rem;
-    }
-    #contact-section .row{
-        flex-direction: column;
-        align-items: center;
-    }
-    .contact-box{
-        width:80%;
-        margin-top:30px;
-    }
-    .contact-box div:nth-of-type(1){
-        margin-top:30px;
-    }
-}
 
 
 
@@ -1690,7 +1659,7 @@ box-shadow: 0px 0px 20px -10px rgba(66, 68, 90, 1);
 
 @media only screen and (max-width: 768px){
     #contact-description{
-        font-size:2rem;
+        font-size:1.2rem;
     }
     #contact-section .row{
         flex-direction: column;

@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function(){
     })
     
 
-    $("section").each((i, e)=>{
+    sections.each((i, e)=>{
         let id = $(e).attr("id");
         $("#scroll-dots-holder > ul").append(`<li class="scroll-dot"><a href="#${id}" data-section-number=${i} rel="nofollow">link</a></li>`)
         animationCheck.push(false);
