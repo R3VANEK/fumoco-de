@@ -27,7 +27,39 @@
         position: static !important;
         margin-left:0% !important;
     }
+    .iesy-benefits p{
+        font-size:1.5rem;
+    }
     #iesy-section .iesy-benefits:nth-child(3){
         background-color: rgba(0, 0, 0, 0.215) !important;
+    }
+    .iesy-article{
+        font-size:1.7rem;
+        margin-top:20%;
+    }
+
+
+
+    #about-us-section .row{
+        display: block;
+    }
+    #about-us-section #about-us-description-box{
+        width:100%;
+        font-size:1rem;
+    }
+    #about-us-section #about-us-description-box p{
+        font-size:1.1rem;
+        width:80%;
+    }
+    #about-us-section #about-us-image-box{
+        width:100%;
+    }
+
+
+    nav li{
+        font-size:1rem !important;
+    }
+    nav ul{
+        margin-left:0vw;
     }
 }

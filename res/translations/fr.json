@@ -1,0 +1,10 @@
+{
+    "lang": "fr",
+    "translations": [
+        {
+            "selector": "#fullpage-wrapper > nav:nth-child(1) > ul:nth-child(2) > a:nth-child(1) > li:nth-child(1)",
+            "text": "test FR"
+        }
+    ]
+
+}
