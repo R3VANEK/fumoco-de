@@ -1,5 +1,9 @@
-/* contact section */
+
 @media only screen and (max-width: 768px){
+
+    .contact-box > h3{
+        font-size: 1.1rem;
+    }
     #contact-description{
         font-size:1.2rem;
     }
@@ -34,11 +38,16 @@
         background-color: rgba(0, 0, 0, 0.215) !important;
     }
     .iesy-article{
-        font-size:1.7rem;
+        font-size:1.3rem;
         margin-top:20%;
     }
 
-
+    .contact-box div{
+        margin-top:0%;
+    }
+    .contact-box div:nth-of-type(1){
+        margin-top:5px;
+    }
 
     #about-us-section .row{
         display: block;
@@ -57,9 +66,39 @@
 
 
     nav li{
-        font-size:1rem !important;
+        font-size:0.6rem !important;
     }
     nav ul{
         margin-left:0vw;
+    }
+    nav ul li{
+        margin-left:0vw;
+    }
+    
+}
+
+
+
+@media only screen and (max-width: 550px){
+    #scroll-dots-holder{
+        display: none;
+    }
+
+    nav ul{
+        display: none;
+    }
+    #country-flags{
+        display: none !important;
+    }
+
+    .contact-box div p,span{
+        font-size:1rem;
+    }
+
+    .contact-box{
+        height:15vh;
+    }
+    .contact-box span{
+        font-size:1.5rem;
     }
 }

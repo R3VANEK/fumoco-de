@@ -1,0 +1,46 @@
+{
+    "lang": "de",
+    "translations": [
+        {
+            "selector": "#fullpage-wrapper > nav:nth-child(1) > ul:nth-child(2) > a:nth-child(1) > li:nth-child(1)",
+            "text": "Über uns"
+        },
+        {
+            "selector": "#fullpage-wrapper > nav:nth-child(1) > ul:nth-child(2) > a:nth-child(3) > li:nth-child(1)",
+            "text": "Kontaktiere"
+        },
+        {
+            "selector": "#about-us-description-box > h1",
+            "text": "Über uns"
+        },
+        {
+            "selector": "#about-us-description-box > p",
+            "text": "<span>FUMOCO GmbH</span> ist ein junges, dynamisches Unternehmen, welches sich spezialisiert hat auf die Entwicklung und den Vertrieb von <span>MOBILEN FAHRTRAGENSYSTEMEN für AMBULANZFAHRZEUGE</span> und ähnliche Produkte.servicedienstleistungen für diese Produkte stehen ebenfalls im Leistungsumfang."
+        },
+        {
+            "selector": "#iesy-text-section .iesy-article",
+            "text": "IESY ist ihr automatisierter eklektischer Helfer, den Sie nicht mehr missen wollen. Entwickelt und erprobt in Zusammenarbeit mit ausgesuchten Kunden und einem führenden Ausbauhersteller, bietet IESY"
+        },
+        {
+            "selector": "article.iesy-benefits:nth-child(1) > p:nth-child(2)",
+            "text": "zuverlässigkeit"
+        },
+        {
+            "selector": "article.iesy-benefits:nth-child(2) > p:nth-child(2)",
+            "text": "einen unschlagbares Preis-Leistungsverhaeltnis"
+        },
+        {
+            "selector": "article.iesy-benefits:nth-child(3) > p:nth-child(2)",
+            "text": "leichte Handhabung"
+        },
+        {
+            "selector": "#contact-heading > h1:nth-child(1)",
+            "text": "Neugierig?"
+        },
+        {
+            "selector": "#contact-section p#contact-description",
+            "text": "Rufen sie uns an oder mailen uns an. Wir geben Ihnen gerne nähere Informationen"
+        }
+    ]
+
+}
