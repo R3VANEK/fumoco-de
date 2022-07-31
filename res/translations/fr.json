@@ -1,9 +1,40 @@
 {
-    "lang": "fr",
     "translations": [
         {
-            "selector": "#fullpage-wrapper > nav:nth-child(1) > ul:nth-child(2) > a:nth-child(1) > li:nth-child(1)",
-            "text": "test FR"
+            "selector": "#fullpage-wrapper > nav:nth-child(1) > ul:nth-child(2) > a:nth-child(1) > li:nth-child(1), #about-us-description-box > h1",
+            "text": "À propos"
+        },
+        {
+            "selector":"#fullpage-wrapper > nav > ul > a:nth-child(3) > li",
+            "text":"Contactez"
+        },
+        {
+            "selector":"section#about-us-section #about-us-description-box p",
+            "text": "FUMOCO GmbH est une entreprise jeune et dynamique qui s'est spécialisée dans le développement et la distribution de SYSTÈMES DE TRANSPORT MOBILES pour VÉHICULES AMBULANTS et produits similaires. Les prestations de service pour ces produits sont également incluses."
+        },
+        {
+            "selector": "#iesy-text-section .iesy-article",
+            "text":"IESY est votre assistant éclectique automatisé dont vous ne pourrez plus vous passer. Développé et testé en collaboration avec des clients sélectionnés et un fabricant de second œuvre de premier plan, IESY offre"
+        },
+        {
+            "selector":"#iesy-section > article:nth-child(1) > p",
+            "text":"Fiabilité"
+        },
+        {
+            "selector":"#iesy-section > article:nth-child(2) > p",
+            "text":"rapport qualité-prix imbattable"
+        },
+        {
+            "selector":"#iesy-section > article:nth-child(3) > p",
+            "text":"facilité d'utilisation"
+        },
+        {
+            "selector":"#contact-section #contact-heading .section-main-h1",
+            "text":"Vous êtes curieux?"
+        },
+        {
+            "selector":"#contact-section #contact-heading #contact-description",
+            "text":"Appelez-nous ou envoyez-nous un e-mail. Nous vous donnerons volontiers de plus amples informations"
         }
     ]
 
