@@ -1,4 +1,4 @@
-const testTranslation = async (langCode) =>{
+const translateSite = async (langCode) =>{
 
     let jsonData = await fetch(`./res/translations/${langCode}.json`, {
         method:"GET"
@@ -8,7 +8,7 @@ const testTranslation = async (langCode) =>{
     $("html").attr(langCode);
 
     jsonData.translations.forEach(e => {
-        $(e.selector).text(e.text)
+        $(e.selector).html(e.text)
     });
 
 
@@ -17,5 +17,5 @@ const testTranslation = async (langCode) =>{
 
 
 $("#country-flags > div").click(function(){
-    testTranslation( $(this).attr("lang") )
+    translateSite( $(this).attr("lang") )
 })
