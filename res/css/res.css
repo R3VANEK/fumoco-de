@@ -51,7 +51,7 @@
         font-size:1.5rem;
     }
     #iesy-section .iesy-benefits:nth-child(3){
-        background-color: rgba(0, 0, 0, 0.215) !important;
+        background-color: rgba(0, 0, 0, 0.215);
     }
     .iesy-article{
         font-size:1.3rem;
