@@ -1490,12 +1490,12 @@ contact section
     margin-left:10px;
 }
 
-nav div#country-flags{
+div#country-flags{
     display: flex;
     margin-right:10px;
     margin-left:auto;
 }
-nav div#country-flags div{
+div#country-flags div{
     margin:5px;
     position: relative;
     z-index:11;
@@ -1506,18 +1506,18 @@ nav div#country-flags div{
     height:1.7rem;
     cursor:pointer;
 }
-nav div#country-flags div a{
+div#country-flags div a{
     position: absolute;
     z-index:10;
     opacity: 0;
 }
-nav div#country-flags div[lang="en"]{
+div#country-flags div[lang="en"]{
     background-image: url("../img/other/en-flag.png");
 }
-nav div#country-flags div[lang="de"]{
+div#country-flags div[lang="de"]{
     background-image: url("../img/other/de-flag.png");
 }
-nav div#country-flags div[lang="fr"]{
+div#country-flags div[lang="fr"]{
     background-image: url("../img/other/fr-flag.png");
 }
 

@@ -1,6 +1,19 @@
 
 @media only screen and (max-width: 768px){
+    #contact-heading{
+        margin-left:0%;
+    }
+    #contact-description{
+        width: 80%;
+        margin-left:10%;
 
+    }
+    #contact-heading > p{
+        text-align: center;
+    }
+    #contact-section .section-main-h1{
+        width: auto !important;
+    }
     #country-flags div{
         width:30px !important;
     }
@@ -86,12 +99,25 @@
     #scroll-dots-holder{
         display: none;
     }
-
+  
     nav ul{
         display: none;
     }
     #country-flags{
         display: none !important;
+    }
+    #country-flags.flags-mobile{
+        margin-left: initial;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        width: max-content !important;
+        height: max-content !important;
+    }
+    #country-flags.flags-mobile div{
+        height:50px;
+        width: 50px !important;
+        border-radius: 50%;
     }
 
     .contact-box div p,.contact-box span{

@@ -1,11 +1,11 @@
 {
     "translations": [
         {
-            "selector": "#fullpage-wrapper > nav:nth-child(1) > ul:nth-child(2) > a:nth-child(1) > li:nth-child(1), #about-us-description-box > h1",
+            "selector": "#fullpage-wrapper > nav:nth-child(1) > ul:nth-child(2) > a:nth-child(1) > li:nth-child(1), #about-us-description-box > h1,#mobile-menu-outer > ul > a:nth-child(1) > li",
             "text": "À propos"
         },
         {
-            "selector":"#fullpage-wrapper > nav > ul > a:nth-child(3) > li",
+            "selector":"#fullpage-wrapper > nav > ul > a:nth-child(3) > li,#mobile-menu-outer > ul > a:nth-child(3) > li",
             "text":"Contactez"
         },
         {
