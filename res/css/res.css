@@ -101,4 +101,73 @@
     .contact-box span{
         font-size:1.5rem;
     }
+
+    #hamburger-icon-mobile{
+        display: block;
+        width:70px;
+        height:50%;
+        margin-left: auto;
+        cursor: pointer;
+        transition: 0.3s ease-in;
+    }
+    #mobile-menu-outer{
+        top:0;
+        left:-100vw;
+        height:100vh;
+        width:100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index:101;
+        position: fixed;
+        background-color: var(--black-fumoco);
+        color: var(--white-fumoco);
+        transition: 1s ease-in-out;
+    }
+    #mobile-menu-outer ul{
+        list-style: none;
+        list-style-type: none;
+    }
+    #mobile-menu-outer li{
+        color: var(--white-fumoco);
+        text-align: center;
+        font-size:2rem;
+        margin:50px;
+        position: relative;
+    }
+
+    #mobile-menu-outer li::before{
+        content:"";
+        position: absolute;
+        width:0%;
+        height:110%;
+        background-color: var(--green-fumoco);
+        top:0%;
+        left:0%;
+
+        z-index:-1;
+        transition: 0.2s ease-out;
+    }
+    #mobile-menu-outer li:hover::before{
+        width:110%;
+    }
+    #close-icon-mobile{
+        position: absolute;
+        top:5%;
+        right:5%;
+        width:30px;
+        height:30px;
+    }
+    #close-icon-mobile img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    #hamburger-icon-mobile img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+    
 }
