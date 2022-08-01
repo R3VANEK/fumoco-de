@@ -60,7 +60,7 @@
         font-size:1rem;
     }
     #about-us-section #about-us-description-box p{
-        font-size:1.1rem;
+        font-size:1.4rem;
         width:80%;
     }
     #about-us-section #about-us-image-box{
@@ -94,7 +94,7 @@
         display: none !important;
     }
 
-    .contact-box div p,span{
+    .contact-box div p,.contact-box span{
         font-size:1rem;
     }
 
