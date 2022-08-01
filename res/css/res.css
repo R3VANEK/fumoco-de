@@ -1,6 +1,9 @@
 
 @media only screen and (max-width: 768px){
 
+    #country-flags div{
+        width:30px !important;
+    }
     .contact-box > h3{
         font-size: 1.1rem;
     }
@@ -66,7 +69,7 @@
 
 
     nav li{
-        font-size:0.6rem !important;
+        font-size:1.9vw !important;
     }
     nav ul{
         margin-left:0vw;

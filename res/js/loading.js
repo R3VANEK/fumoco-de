@@ -22,8 +22,12 @@ window.addEventListener("load",()=>{
         duration: 1000,
         delay: 5500,
         complete: function(){
-            var video = document.getElementById("videoBanner");
-            video.play();
+            var videos = document.getElementsByClassName("video-banner");
+            console.log(videos)
+            for(let i =0; i < videos.length; i++){
+                videos[i].play();
+            }
+           
             isFinishedLoading = true;
         }
     })

@@ -222,19 +222,41 @@ body, html {
     align-items: center;
     overflow: hidden;
 }
-#videoBanner{
+.video-banner{
 object-fit: cover;
   z-index:-1;
   top:50%;
   left:50%;
   height: auto;
   width: auto;
+  
   min-height: 100vh;
   min-width: 100vw;
   transform: translate(-50%, -50%);
   position: absolute; /* magic sauce */
 }
-
+@media (min-aspect-ratio: 16/9){
+    .video-text{
+        display: block;
+    }
+    .video-no-text{
+        display: none;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .video-text{
+        display: none;
+    }
+    .video-no-text{
+        display: black;
+    }
+}
+#hamburger-icon-mobile{
+    display: none;
+}
+#mobile-menu-outer{
+    display: none;
+}
 #scroll-banner-down > span{
     text-decoration: none;
     font-size:1.3rem;
