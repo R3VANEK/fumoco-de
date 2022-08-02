@@ -248,8 +248,37 @@ object-fit: cover;
         display: none;
     }
     .video-no-text{
-        display: black;
+        display: block;
     }
+    #media-button{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 20%;
+        left:20%;
+        padding:15px 30px 15px 30px;
+        outline:none;
+        border:none;
+        color:var(--black-fumoco);
+        background-color: var(--green-fumoco);
+        cursor: pointer;
+        font-size:1.7rem;
+    }
+}
+#banner-main-aspect-outer{
+    display:block;
+    position: absolute;
+
+}
+#aspect-logo{
+    width:40%;
+    height:40%;
+}
+#aspect-logo img{
+    width: 100%;
+    object-fit: contain;
 }
 #hamburger-icon-mobile{
     display: none;
@@ -449,6 +478,9 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     overflow:hidden; */
+}
+#media-button{
+    display: block;
 }
 
 .banner-flex{
