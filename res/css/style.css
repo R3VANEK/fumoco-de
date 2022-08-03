@@ -17,6 +17,7 @@
     padding:0;
     /* font-family: 'NexaDemo-Light', Arial; */
     font-family:'Roboto',Arial;
+    font-weight: lighter;
     scroll-behavior: smooth;
     --black-fumoco: #1B232A;
     --grey-fumoco: #36424A;
@@ -34,6 +35,7 @@ h1,h2,h3,h4,h5,h6{
 }
 a{
     text-decoration: none;
+    color:inherit;
 }
 
 .material-symbols-outlined {
@@ -235,6 +237,53 @@ object-fit: cover;
   transform: translate(-50%, -50%);
   position: absolute; /* magic sauce */
 }
+#overlaping-shadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #182127bf;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#video-h1{
+    font-size:4rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+#overlaping-shadow a{
+    margin-top:65px;
+}
+#video-link-outer{
+    border-bottom:2px solid var(--white-fumoco);
+    transition: 0.2s ease-in-out;
+    padding:20px 40px 20px 40px;
+    position: relative;
+    z-index:1;
+}
+#video-link-outer::before{
+    content:'';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    transition: 0.5s ease-in-out;
+    top:100%;
+    left:0%;
+    background-color: var(--green-fumoco);
+    z-index:-1;
+}
+#video-link-outer:hover::before{
+    width: 100%;
+}
+#video-link-outer p{
+    font-size:1.2rem;
+    letter-spacing: 3px;
+    font-weight:400;
+    z-index:1;
+    transition: 0.5s ease;
+}
 @media (min-aspect-ratio: 16/9){
     .video-text{
         display: block;
@@ -267,18 +316,10 @@ object-fit: cover;
         font-size:1.7rem;
     }
 }
-#banner-main-aspect-outer{
-    display:block;
-    position: absolute;
-
-}
-#aspect-logo{
-    width:40%;
-    height:40%;
-}
-#aspect-logo img{
-    width: 100%;
-    object-fit: contain;
+#about-us-section{
+    background-image: url("../img/iesy-animation/no-text.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #hamburger-icon-mobile{
     display: none;
@@ -323,6 +364,16 @@ object-fit: cover;
 @keyframes slide-down{
     from{margin-top:0%;}
     to{margin-top:300%}
+}
+
+#iesy-text-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+#iesy-text-section h1{
+    margin-bottom:10vh;
 }
 
 /* #scroll-banner-down a:hover{
@@ -412,7 +463,7 @@ box-shadow: 2px 3px 45px -8px rgba(66, 68, 90, 1);
 
 nav{
     width:80%;
-    height:7vh;
+    height:5vh;
     display: flex;
     background-color: var(--white-fumoco);
     justify-content: left;
@@ -680,7 +731,7 @@ about us section
 ==================================================================================
 */
 #about-us-description-box{
-    width:40%;
+    width:30%;
     padding:50px;
 }
 #about-us-description-box p{
@@ -693,16 +744,10 @@ about us section
     margin-top:10%;
 }
 
-#about-us-image-box{
-    width:40%;
-    background-image: url("../img/other/ambulance.jpg");
-    background-repeat: no-repeat;
-    background-position:2% 50%;
-    background-size: cover;
-}
 #about-us-description-box span{
     font-weight: bold;
     color: var(--green-fumoco);
+    
 }
 
 
@@ -774,13 +819,14 @@ iesy section
 
 .iesy-article{
     position: relative;
-    margin-left:25%;
-    width:50%;
     text-align: center;
     font-size:3px;
     margin-top:7%;
+    background-color: var(--white-fumoco);
+    color:black;
+    padding:60px;
 }
-.iesy-article::before{
+.iesy-article p::before{
     content:'';
     background-image: url("../img/other/quote.png");
     width:50px;
@@ -789,11 +835,11 @@ iesy section
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    top:-50px;
-    left:0px;
+    top:10px;
+    left:10px;
 }
 
-.iesy-article::after{
+.iesy-article p::after{
     content:'';
     background-image: url("../img/other/quote.png");
     width:50px;
@@ -802,8 +848,8 @@ iesy section
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    bottom:-20px;
-    right:-40px;
+    bottom:10px;
+    right:20px;
     transform: rotate(180deg);
 }
 .iesy-benefits-box{
@@ -1359,24 +1405,12 @@ iesy section
 
 .iesy-article{
     position: relative;
-    margin-left:25%;
-    width:50%;
+    width:40%;
     text-align: center;
     font-size:2.4vw;
     margin-top:7%;
 }
-.iesy-article::before{
-    content:'';
-    background-image: url("../img/other/quote.png");
-    width:50px;
-    height:50px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    top:-50px;
-    left:0px;
-}
+
 #quote-author{
     margin-top:30px;
     font-size:1.5vw;
