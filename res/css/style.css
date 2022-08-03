@@ -246,6 +246,7 @@ object-fit: cover;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 #video-h1{
     font-size:4rem;
@@ -363,6 +364,16 @@ object-fit: cover;
 @keyframes slide-down{
     from{margin-top:0%;}
     to{margin-top:300%}
+}
+
+#iesy-text-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+#iesy-text-section h1{
+    margin-bottom:10vh;
 }
 
 /* #scroll-banner-down a:hover{
@@ -736,6 +747,7 @@ about us section
 #about-us-description-box span{
     font-weight: bold;
     color: var(--green-fumoco);
+    
 }
 
 
@@ -807,13 +819,14 @@ iesy section
 
 .iesy-article{
     position: relative;
-    margin-left:25%;
-    width:50%;
     text-align: center;
     font-size:3px;
     margin-top:7%;
+    background-color: var(--white-fumoco);
+    color:black;
+    padding:60px;
 }
-.iesy-article::before{
+.iesy-article p::before{
     content:'';
     background-image: url("../img/other/quote.png");
     width:50px;
@@ -822,11 +835,11 @@ iesy section
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    top:-50px;
-    left:0px;
+    top:10px;
+    left:10px;
 }
 
-.iesy-article::after{
+.iesy-article p::after{
     content:'';
     background-image: url("../img/other/quote.png");
     width:50px;
@@ -835,8 +848,8 @@ iesy section
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    bottom:-20px;
-    right:-40px;
+    bottom:10px;
+    right:20px;
     transform: rotate(180deg);
 }
 .iesy-benefits-box{
@@ -1392,24 +1405,12 @@ iesy section
 
 .iesy-article{
     position: relative;
-    margin-left:25%;
-    width:50%;
+    width:40%;
     text-align: center;
     font-size:2.4vw;
     margin-top:7%;
 }
-.iesy-article::before{
-    content:'';
-    background-image: url("../img/other/quote.png");
-    width:50px;
-    height:50px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    top:-50px;
-    left:0px;
-}
+
 #quote-author{
     margin-top:30px;
     font-size:1.5vw;

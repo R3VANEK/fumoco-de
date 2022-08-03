@@ -1,4 +1,23 @@
-
+@media only screen and (max-width:1000px){
+    .contact-box{
+        width:70%;
+        height:20vh;
+        margin-top:30px;
+    }
+    .contact-box div:nth-of-type(1){
+        margin-top:30px;
+    }
+    .contact-box > h3{
+        font-size: 1.1rem;
+    }
+    #contact-section .row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-box div:nth-of-type(1){
+        margin-top:15px;
+    }
+}
 @media only screen and (max-width: 768px){
     #contact-heading{
         margin-left:0%;
@@ -17,24 +36,12 @@
     #country-flags div{
         width:30px !important;
     }
-    .contact-box > h3{
-        font-size: 1.1rem;
-    }
+
     #contact-description{
         font-size:1.2rem;
     }
-    #contact-section .row{
-        flex-direction: column;
-        align-items: center;
-    }
-    .contact-box{
-        width:70%;
-        height:20vh;
-        margin-top:30px;
-    }
-    .contact-box div:nth-of-type(1){
-        margin-top:30px;
-    }
+
+
 
     #iesy-section{
         display: flex;
