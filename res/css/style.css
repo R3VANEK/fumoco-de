@@ -315,18 +315,10 @@ object-fit: cover;
         font-size:1.7rem;
     }
 }
-#banner-main-aspect-outer{
-    display:block;
-    position: absolute;
-
-}
-#aspect-logo{
-    width:40%;
-    height:40%;
-}
-#aspect-logo img{
-    width: 100%;
-    object-fit: contain;
+#about-us-section{
+    background-image: url("../img/iesy-animation/no-text.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #hamburger-icon-mobile{
     display: none;
@@ -728,7 +720,7 @@ about us section
 ==================================================================================
 */
 #about-us-description-box{
-    width:40%;
+    width:30%;
     padding:50px;
 }
 #about-us-description-box p{
@@ -741,13 +733,6 @@ about us section
     margin-top:10%;
 }
 
-#about-us-image-box{
-    width:40%;
-    background-image: url("../img/other/ambulance.jpg");
-    background-repeat: no-repeat;
-    background-position:2% 50%;
-    background-size: cover;
-}
 #about-us-description-box span{
     font-weight: bold;
     color: var(--green-fumoco);
