@@ -17,15 +17,20 @@
     <link rel="stylesheet" type="text/css" href="./res/css/style.css">
     <link rel="stylesheet" type="text/css" href="./res/css/res.css">
     <link rel="icon" href="./res/img/other/favicon.png">
+    <link rel="stylesheet" type="text/css" href="res/css/splide-core.min.css">
 
     <title>Fumoco.de</title>
 </head>
 <body>
 
- <div id="animation-holder">
+
+
+    
+
+ <!-- <div id="animation-holder">
         <img src="res/img/logo/fumoco_rgb_transparent.png"/>
         <div id="loading-bar"></div>
-    </div> 
+    </div>  -->
 
     <div id="mobile-menu-outer">
 
@@ -100,6 +105,21 @@
                 <img src="./res/img/other/hamburger.png" alt="menu icon"/>
             </div>
         </nav>
+
+        <section>
+            <section class="splide" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                            <li class="splide__slide"><img src="./res/img/iesy-animation/iesy-1.jpg"/></li>
+                            <li class="splide__slide"><img src="./res/img/iesy-animation/iesy-2.jpg"/></li>
+                            <li class="splide__slide"><img src="./res/img/iesy-animation/iesy-3.jpg"/></li>
+                            <li class="splide__slide"><img src="./res/img/iesy-animation/iesy-4.jpg"/></li>
+                          <li class="splide__slide"><img src="./res/img/iesy-animation/no-text.jpg"/></li>
+                          <li class="splide__slide"><img src="./res/img/iesy-animation/text.jpg"/></li>
+                      </ul>
+                </div>
+              </section>
+        </section>
     
         <section id="banner-main" style="overflow: hidden;">
 
@@ -113,14 +133,14 @@
                 </a>
             </div>
     
-            <video muted loop preload="auto" class="video-banner video-text">
-                <source src="./res/video/fumoco_video_compressed.mp4" type="video/mp4">
-                <source src="./res/video/fumoco_video_no_text.mp4" type="video/mp4">
+            <video muted loop preload="auto" class="video-banner">
+                <!-- <source src="./res/video/fumoco_video_compressed.mp4" type="video/mp4"> -->
+                <source src="./res/video/fumoco_video_no_text_compressed.mp4" type="video/mp4">
             </video>
 
-            <video muted loop preload="auto" class="video-banner video-no-text">
-                <source src="./res/video/fumoco_video_no_text.mp4" type="video/mp4">
-            </video>
+            <!-- <video muted loop preload="auto" class="video-banner video-no-text">
+                <source src="./res/video/fumoco_video_no_text_compressed.mp4" type="video/mp4">
+            </video> -->
         
             <a href="#about-us-section" rel="nofollow">
                 <div id="scroll-banner-down">
@@ -246,6 +266,24 @@
     <script type="text/javascript" src="res/js/dots.js"></script>
     <script type="text/javascript" src="res/js/translations.js"></script>
     <script type="text/javascript" src="res/js/menu.js"></script>
+    <script src="res/js/splide.min.js"></script>
+    <script>
+        new Splide( '.splide', {
+            type    : 'loop',
+            autoplay: true,
+            interval: 2000,
+            preloadPages:2,
+            easing: "ease-in",
+            lazyLoad: 'nearby',
+            arrows:false,
+            pagination:false,
+            pauseOnHover:false,
+            pauseOnFocus:false,
+            drag   : 'free',
+            snap   : true,
+            perPage : 1,
+            } ).mount();
+    </script>
 
 
    
