@@ -10,6 +10,14 @@
             "text": "Kontaktiere"
         },
         {
+            "selector":"#video-h1",
+            "text":"Stretchers. Neu definiert"
+        },
+        {
+            "selector":"#video-link-outer > p",
+            "text":"Mehr sehen"
+        },
+        {
             "selector": "#about-us-description-box > h1",
             "text": "Über uns"
         },

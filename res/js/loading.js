@@ -19,7 +19,7 @@ window.addEventListener("load",()=>{
         translateX: [-1000, 0],
         autoplay: true,
         easing: 'easeInOutSine',
-        duration: 1000,
+        duration: 6000,
         delay: 5500,
         complete: function(){
             var videos = document.getElementsByClassName("video-banner");
@@ -27,7 +27,7 @@ window.addEventListener("load",()=>{
             for(let i =0; i < videos.length; i++){
                 videos[i].play();
             }
-           
+            $("#animation-holder").css("display","none");
             isFinishedLoading = true;
         }
     })

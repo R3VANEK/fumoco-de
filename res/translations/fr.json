@@ -9,6 +9,14 @@
             "text":"Contactez"
         },
         {
+            "selector":"#video-h1",
+            "text":"Stretchers. Redéfini"
+        },
+        {
+            "selector":"#video-link-outer > p",
+            "text":"voir plus"
+        },
+        {
             "selector":"section#about-us-section #about-us-description-box p",
             "text": "<span>FUMOCO GmbH</span> est une entreprise jeune et dynamique qui s'est spécialisée dans le développement et la distribution de <span>SYSTÈMES DE TRANSPORT MOBILES pour VÉHICULES AMBULANTS</span> et produits similaires. Les prestations de service pour ces produits sont également incluses."
         },
