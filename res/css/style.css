@@ -320,6 +320,10 @@ object-fit: cover;
     background-image: url("../img/iesy-animation/no-text.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #hamburger-icon-mobile{
     display: none;
@@ -731,8 +735,9 @@ about us section
 ==================================================================================
 */
 #about-us-description-box{
-    width:30%;
+    width:80%;
     padding:50px;
+    background-color: #000000a7;
 }
 #about-us-description-box p{
     text-align:start;
@@ -827,8 +832,8 @@ iesy section
     padding:60px;
 }
 .iesy-article p::before{
-    content:'';
-    background-image: url("../img/other/quote.png");
+    content:'"';
+    font-size:6rem;
     width:50px;
     height:50px;
     background-position: center;
@@ -840,8 +845,8 @@ iesy section
 }
 
 .iesy-article p::after{
-    content:'';
-    background-image: url("../img/other/quote.png");
+    content:'"';
+    font-size:6rem;
     width:50px;
     height:50px;
     background-position: center;
