@@ -764,7 +764,7 @@ iesy section
 #iesy-section{
     background-color: var(--grey-fumoco);
     color:var(--white-fumoco);
-    background-image: url("../img/baner/IESY\ BASE_v3\ BLUE.jpg");
+    background-image: url("../img/iesy-benefits/iesy-render1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -824,7 +824,7 @@ iesy section
     
 }
 .iesy-benefits:hover{
-    background-color:#70d55187 !important;
+    background-color:#2d572068 !important;
 }
 
 
@@ -1410,7 +1410,7 @@ iesy section
     
 }
 .iesy-benefits:hover{
-    background-color:#70d55187 !important;
+    background-color:#44922cbb !important;
 }
 
 
