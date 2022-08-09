@@ -20,6 +20,16 @@
 }
 @media only screen and (max-width: 768px){
    
+    #about-us-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #about-us-description-box{
+        width:80% !important;
+        margin:0 !important;
+    }
+    
     #video-h1{
         font-size:10vw;
     }
