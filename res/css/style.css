@@ -375,6 +375,10 @@ object-fit: cover;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    background-image: url("../img/other/iesy-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 /* #iesy-text-section h1{
     margin-bottom:10vh;
@@ -777,6 +781,18 @@ iesy section
     
     
 }
+
+#iesy-section-title-outer{
+    height:15vh;
+    width:auto;
+    margin-top:10vh;
+}
+#iesy-section-title-outer img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 .iesy-benefits{
   
     position: absolute;
