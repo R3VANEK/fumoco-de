@@ -211,6 +211,7 @@ body, html {
     position: relative;
 }
 #scroll-banner-down{
+    z-index:1;
     position: absolute;
     bottom:30px;
     left:50%;
@@ -252,6 +253,7 @@ object-fit: cover;
     font-size:4rem;
     font-weight: bold;
     letter-spacing: 3px;
+    z-index:1;
 }
 #overlaping-shadow a{
     margin-top:65px;
@@ -1414,7 +1416,18 @@ iesy section
 }
 
 
+#mobile-slider-holder{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.633);
+    filter: opacity(0.5);
 
+}
+.splide__slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
 
 .iesy-article{
     position: relative;

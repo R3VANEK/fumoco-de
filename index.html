@@ -134,13 +134,10 @@
             </div>
     
             <video muted loop preload="auto" class="video-banner">
-                <!-- <source src="./res/video/fumoco_video_compressed.mp4" type="video/mp4"> -->
-                <source src="./res/video/fumoco_video_no_text_compressed.mp4" type="video/mp4">
+                <source src="./res/video/fumoco_video_no_text_compressed.mp4" type="video/mp4" media="screen and (max-width:768px)">
             </video>
 
-            <!-- <video muted loop preload="auto" class="video-banner video-no-text">
-                <source src="./res/video/fumoco_video_no_text_compressed.mp4" type="video/mp4">
-            </video> -->
+     
         
             <a href="#about-us-section" rel="nofollow">
                 <div id="scroll-banner-down">
@@ -148,6 +145,21 @@
                 </div>
             </a>
 
+            <div id="mobile-slider-holder">
+                <!-- <h1 id="video-h1">Stretchers. Neu definiert</h1> -->
+                <section class="splide" aria-label="mobile slider">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide"><img src="./res/img/iesy-animation/iesy-1.jpg"/></li>
+                            <li class="splide__slide"><img src="./res/img/iesy-animation/iesy-2.jpg"/></li>
+                            <li class="splide__slide"><img src="./res/img/iesy-animation/iesy-3.jpg"/></li>
+                            <li class="splide__slide"><img src="./res/img/iesy-animation/iesy-4.jpg"/></li>
+                            <li class="splide__slide"><img src="./res/img/iesy-animation/no-text.jpg"/></li>
+                            <li class="splide__slide"><img src="./res/img/iesy-animation/text.jpg"/></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
             
            
 
@@ -276,6 +288,9 @@
         new Splide( '.splide', {
             type    : 'loop',
             autoplay: true,
+            cover      : true,
+            width : '100vw',
+		height: '100vh',
             interval: 2000,
             preloadPages:2,
             easing: "ease-in",

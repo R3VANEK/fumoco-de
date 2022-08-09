@@ -19,7 +19,13 @@
     }
 }
 @media only screen and (max-width: 768px){
-   
+   .video-banner{
+    display: none !important;
+   }
+    #mobile-slider-holder{
+        display:block;
+    }
+
     #about-us-section{
         display: flex;
         justify-content: center;
