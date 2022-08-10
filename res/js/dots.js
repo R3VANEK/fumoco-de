@@ -40,7 +40,7 @@ document.getElementById("fullpage-wrapper").addEventListener("scroll", function(
         ){
             $(".scroll-dot").removeAttr("section-scrolled-active");
             $(".scroll-dot").eq(i).attr("section-scrolled-active", "true");
-
+            console.log(i)
             scrollAnimations($("section").eq(i), i);
         }
     })
@@ -50,6 +50,8 @@ document.getElementById("fullpage-wrapper").addEventListener("scroll", function(
 
 const scrollAnimations = (parent, index) =>{
     
+
+
     if(animationCheck[index])
         return
 
