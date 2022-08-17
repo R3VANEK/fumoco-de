@@ -11,26 +11,31 @@ window.addEventListener("load",()=>{
         autoplay: true,
         easing: 'easeInOutSine',
         duration: 1000,
-        delay: 5000
-    })
-
-    var leftMenuSlide = anime({
-        targets: "#main-left",
-        translateX: [-1000, 0],
-        autoplay: true,
-        easing: 'easeInOutSine',
-        duration: 6000,
-        delay: 5500,
+        delay: 5000,
         complete: function(){
             var videos = document.getElementsByClassName("video-banner");
-            console.log(videos)
             for(let i =0; i < videos.length; i++){
                 videos[i].play();
             }
-            $("#animation-holder").css("display","none");
-            isFinishedLoading = true;
+            videos[0].addEventListener("oncanplaythrough", function(){
+                var leftMenuSlide = anime({
+                    targets: "#main-left",
+                    translateX: [-1000, 0],
+                    autoplay: true,
+                    easing: 'easeInOutSine',
+                    duration: 6000,
+                    delay: 5500,
+                    complete: function(){
+                        
+                        $("#animation-holder").css("display","none");
+                        isFinishedLoading = true;
+                    }
+                })
+            })
         }
     })
+
+   
 
     
 
