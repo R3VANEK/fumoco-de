@@ -21,3 +21,13 @@ One-page style website built for Fumoco GmbH. You can view it online right [here
 * Custom written Javascript onscroll text animations instead of using libraries like AOS.js
 * Javascript no-reload language translation
 
+## Technologies used
+* HTML5
+* CSS3
+* JS ES6
+* Jquery
+* Splide.js
+* Anime.js
+
+## Licence
+All rights reserved, all media except contact section belongs to JK Creative Media
