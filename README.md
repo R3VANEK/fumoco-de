@@ -30,4 +30,4 @@ One-page style website built for Fumoco GmbH. You can view it online right [here
 * Anime.js
 
 ## Licence
-All rights reserved, all media except contact section belongs to JK Creative Media
+Apache License 2.0, except all media, they belong to JK Creative Media (All rights reserved)
